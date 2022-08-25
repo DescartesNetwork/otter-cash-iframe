@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { net, useUI } from '@sentre/senhub'
+import { net, useSetBackground } from '@sentre/senhub'
 
 import EmbededView from '@sentre/embeded-view'
 import MainnetOnly from './mainnetOnly'
@@ -12,7 +12,7 @@ const {
 const BG_IMG = 'linear-gradient(150deg, #ffcd9e, #e8ffb8)'
 
 const View = () => {
-  const { setBackground } = useUI()
+  const setBackground = useSetBackground()
 
   useEffect(() => {
     setBackground({ light: BG_IMG, dark: BG_IMG })
