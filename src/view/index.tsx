@@ -24,7 +24,7 @@ const View = () => {
       appId={appId}
       src={'https://otter.cash/deposit'}
       title="A privacy layer for the Solana ecosystem."
-      wallet={window.sentre.wallet}
+      wallet={window.sentre.solana}
     />
   )
 }
